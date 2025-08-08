@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-rochester font-semibold text-5xl text-white lg:text-7xl;
+  }
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c757d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.btn-custom {
+  @apply font-poppins text-xs text-white  py-4 px-8 rounded-md bg-customDarkGreen hover:bg-customGreen/30 lg:text-base;
+}
+.btn-custom2 {
+  @apply font-poppins text-xs text-white py-4 px-8 rounded-md bg-customGreen lg:text-base hover:bg-customGreen/30;
+}
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: white;
+}
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  position: fixed;
+  right: 25px;
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
+}
+.carousel {
+  position: relative;
+}
+.carousel__item {
+  display: none;
+}
+.carousel__item--selected {
+  display: block;
+}
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  text-align: center;
+}
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.carousel__button--selected {
+  border: 1px solid black;
+  background: none;
+}
+.border-navbar {
+  @apply mx-2 group-hover:border-b group-hover:border-white;
+}
+.text-menu {
+  @apply font-poppins font-semibold text-sm text-white;
+}
+.text-date {
+  @apply font-poppins text-xs text-center text-white lg:text-sm;
+}
+.text-subheader {
+  @apply font-poppins text-sm text-center lg:text-lg;
+}
+.text-header {
+  @apply font-poppins font-bold text-xl text-center pb-8 lg:text-2xl;
+}
+.text-opener {
+  @apply font-poppins text-xs text-center text-black lg:text-sm;
+}
+.text-content {
+  @apply font-poppins text-xs text-center text-black lg:text-sm;
+}
+.text-content2 {
+  @apply font-poppins text-xs lg:text-sm;
+}
+.title-profile {
+  @apply font-rochester font-semibold text-3xl lg:text-5xl;
+}
+.text-profile {
+  @apply font-poppins text-xs text-black max-w-sm lg:text-lg lg:text-center;
+}
+.title-story {
+  @apply font-poppins font-bold text-sm lg:text-lg;
+}
+.text-story {
+  @apply font-poppins text-xs text-customDarkGrey lg:text-sm;
+}
+.title-wish {
+  @apply uppercase font-bold font-poppins text-sm tracking-widest text-black;
+}
+.text-wish {
+  @apply text-xl italic text-customDarkGrey max-w-md;
+}
+.input-custom {
+  @apply p-4 px-4 w-full rounded-sm shadow-sm border border-black;
+}
+.aspect-map {
+  @apply font-rochester font-bold text-2xl text-white;
+}
+.aspect-gallery {
+  @apply aspect-w-2 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4;
+}
+.aspect-video {
+  @apply aspect-w-16 aspect-h-9;
+}
+.wrap {
+  @apply object-cover shadow-lg rounded-lg;
+}
+.border-story {
+  @apply border-b border-black w-3/4;
+}
+.img-story {
+  @apply w-14 h-14 rounded-full lg:w-20 lg:h-20;
+}

@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c757d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Hamburger Button */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  /* left: 0; */
+  right: 20px;
+  transition: all 0.25s;
+  position: fixed;
+  top: 25px;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  /* display: block; */
+  /* position: block; */
+  /* position:  */
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: white;
+}
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  position: fixed;
+  /* display: flex; */
+  right: 20px;
+  top: 30px;
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
+}
+/* Button */
+.btn-custom {
+  @apply text-white py-4 px-8 rounded-md bg-customLightBrown lg:text-base hover:bg-customLightBrown/30;
+}
+/* Carousel Slide */
+
+/* Fade In */
+/* .reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+} */
+
+@layer components {
+  .timeline-container {
+    @apply relative pt-2 xs:pt-0 lg:w-1/2 md:ml-auto lg:pl-24;
+  }
+  .timeline-container-left {
+    @apply md:ml-0 md:mr-auto md:pl-0 md:pr-16 lg:pr-24;
+  }
+  .flower-left {
+    @apply hidden absolute mx-auto left-0 right-12 fill-customBrown lg:block;
+  }
+
+  .flower-right {
+    @apply hidden absolute mx-auto left-12 right-0 lg:block;
+  }
+}
+
+/* .circle-decoration {
+  background-image: url("https://wedding.invie.my.id/assets/vendors/theme-three/img/decoration/text-dec-section-2.png");
+} */
+
+/* .circle-decoration {
+  @apply flex justify-center items-center bg-no-repeat bg-cover bg-center w-44 h-44 lg:w-48 lg:h-48;
+} */
+
+/* .card-left {
+  background-image: url("https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-left-1.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 80px;
+  background-position-y: top;
+}
+.card {
+  background-image: url("https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-right-1.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: 80px;
+  background-position-y: top;
+}
+.card-gift {
+  background-color: white;
+  background-image: url("../images/gift.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 100px;
+  background-position-y: 115px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+} */
+
+.text-wish {
+  @apply text-xl text-center italic leading-relaxed text-customGray;
+}
+
+.text-header {
+  @apply text-4xl text-white lg:text-5xl;
+}
+
+.text-content {
+  @apply text-xs text-center text-white lg:text-sm;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel__item {
+  display: none;
+}
+.carousel__item--selected {
+  display: block;
+}
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  text-align: center;
+}
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.carousel__button--selected {
+  border: 1px solid black;
+  background: none;
+}

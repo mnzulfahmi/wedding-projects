@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  h2 {
+    @apply font-cormorantInfant font-semibold text-[50px] text-center text-customPink;
+  }
+}
+
+@layer components {
+  .text-content {
+    @apply font-montserrat font-medium text-base  text-center text-customDarkGrey;
+  }
+  .text-content-2 {
+    @apply font-montserrat text-base text-center leading-relaxed text-customDarkGrey;
+  }
+  .name-card {
+    @apply font-cormorantInfant text-4xl text-center text-customBlack;
+  }
+  .title-date {
+    @apply font-cormorantInfant text-3xl text-center text-customBlack;
+  }
+  .text-date {
+    @apply font-montserrat font-bold text-sm text-center text-customDarkGrey;
+  }
+  .title-time {
+    @apply font-cormorantInfant text-[40px] text-center text-customBlack lg:text-6xl;
+  }
+  .title-story {
+    @apply font-cormorantInfant text-[40px] text-center text-customBlack lg:text-4xl;
+  }
+  .text-profile {
+    @apply font-montserrat font-bold text-xs text-center uppercase text-customDarkGrey;
+  }
+  .title-testimoni {
+    @apply font-montserrat font-bold text-base leading-relaxed text-customDarkGrey;
+  }
+  .text-testimoni {
+    @apply font-montserrat text-base leading-relaxed text-customDarkGrey;
+  }
+  .btn-custom {
+    @apply font-montserrat font-semibold text-sm leading-[17px] text-white uppercase py-[13px] px-[21px] bg-customPink hover:bg-customPink/30 rounded-[5px];
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #f59d9d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#hero {
+  background-image: url("../images/prewed/prewed1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+#rsvp {
+  background-image: url("../images/prewed/prewed12.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  background-color: white;
+  background-image: url("../images/gift.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 100px;
+  background-position-y: 115px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.background-blend {
+  @apply h-full bg-black/40 flex justify-center items-center flex-col text-white;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: #000;
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  position: fixed;
+  top: 50px;
+  right: 25px;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
+}

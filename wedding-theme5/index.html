@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+    <title>Wedding Project 5</title>
+  </head>
+
+  <body>
+    <!-- <div
+      id="overlay"
+      class="z-30 absolute bg-cover bg-no-repeat bg-center h-screen w-full"
+      style="
+        background-image: linear-gradient(
+            180deg,
+            rgba(18, 38, 23, 0.7) 0%,
+            rgba(18, 38, 23, 0.7) 100%
+          ),
+          url('https://wedding.invie.my.id/assets/vendors/theme-four/img/bg/header.jpg');
+      "
+    >
+      <div
+        class="h-full -mt-10 z-20 flex justify-center items-center space-y-8 px-5 flex-col text-white"
+      >
+        <div
+          id="typing-container"
+          class="flex animate-[wiggle_1s_ease-in-out_infinite]"
+        >
+          <h1>Farrel & Fitri</h1>
+        </div>
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-four/img/decoration/foliage-horizontal-2.svg"
+          alt="invie_logo"
+          class="w-60"
+        />
+        <p class="text-content2 text-center font-semibold">
+          Kepada Yth. Tamu Undangan
+        </p>
+        <p class="text-content2 text-center">
+          Kami mengundang Bapak/Ibu/Saudara/i di acara pernikahan kami pada :
+          <br />
+          Minggu, 26 Februari 2023
+        </p>
+        <p class="text-content2 text-center italic">
+          *Mohon maaf bila ada kesalahan penulisan nama dan gelar
+        </p>
+        <button id="open-invitation" class="btn-custom2">Buka Undangan</button>
+      </div>
+    </div> -->
+
+    <!-- <div id="overlay" class="hidden relative z-50">
+      <img
+        src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/header.jpg"
+        alt=""
+        style="
+          position: absolute;
+          height: 100vh;
+          width: 100%;
+          object-fit: cover;
+        "
+      />
+      <div class="absolute h-screen w-full bg-opacity-70 bg-customDarkGreen2">
+        <div
+          class="-mt-10 z-20 flex flex-col justify-center items-center h-screen text-white space-y-5"
+        >
+          <h1
+            class="font-rochester font-medium text-5xl text-white lg:text-7xl"
+          >
+            Farrel & Fitri
+          </h1>
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-four/img/decoration/foliage-horizontal-2.svg"
+            alt="invie_logo"
+            class="w-60"
+          />
+          <hr />
+          <p class="text-content2 text-center font-semibold">
+            Kepada Yth. Tamu Undangan
+          </p>
+          <p class="text-content2 text-center">
+            Kami mengundang Bapak/Ibu/Saudara/i di acara pernikahan kami pada :
+            <br />
+            Minggu, 26 Februari 2023
+          </p>
+          <p class="text-content2 text-center italic">
+            *Mohon maaf bila ada kesalahan penulisan nama dan gelar
+          </p>
+          <button id="open-invitation" class="btn-custom">Buka Undangan</button>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="body-invitation">
+      <!-- HERO SECTION  -->
+      <section id="hero">
+        <div class="relative h-screen w-full">
+          <!-- Image Background -->
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/header.jpg"
+            alt=""
+            class="absolute h-screen w-full object-cover"
+          />
+          <!-- Background Blend -->
+          <div
+            class="absolute h-screen w-full bg-opacity-70 bg-customBrown"
+          ></div>
+
+          <div class="absolute flex flex-col h-screen">
+            <!-- NAVBAR -->
+            <nav id="navbar" class="z-50 bg-customBrown fixed h-20 w-full">
+              <div class="flex flex-row justify-between items-center">
+                <!-- Flex -->
+                <div class="flex flex-col">
+                  <!-- Logo -->
+                  <div class="flex flex-col p-3 px-5">
+                    <a href="#" class="font-dancing_script text-xl text-white"
+                      >Farrel & Fitri</a
+                    >
+                    <img
+                      src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-navbar-brand.svg"
+                      class="w-16"
+                      alt=""
+                    />
+                  </div>
+
+                  <!-- Mobile Menu -->
+                  <div
+                    id="menu"
+                    class="hidden flex-col space-y-4 text-white rounded-sm w-screen p-3 px-5 bg-customBrown"
+                  >
+                    <div class="group">
+                      <a href="#bride">Mempelai</a>
+                      <div class="border-navbar"></div>
+                    </div>
+                    <div class="group">
+                      <a href="#invitation">Undangan</a>
+                      <div class="border-navbar"></div>
+                    </div>
+                    <div class="group">
+                      <a href="#story">Story</a>
+                      <div class="border-navbar"></div>
+                    </div>
+                    <div class="group">
+                      <a href="#gallery">Galeri</a>
+                      <div class="border-navbar"></div>
+                    </div>
+                    <div class="group">
+                      <a href="#rsvp">RSVP</a>
+                      <div class="border-navbar"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Hamburger Button -->
+                <div>
+                  <button
+                    id="menu-btn"
+                    class="hamburger block z-50 lg:hidden focus:outline-none"
+                  >
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                  </button>
+                </div>
+
+                <!-- Menu -->
+                <div class="hidden px-5 lg:flex lg:space-x-10">
+                  <div class="group">
+                    <a href="#bride" class="font-poppins text-white"
+                      >Mempelai</a
+                    >
+                    <div class="border-navbar"></div>
+                  </div>
+                  <div class="group">
+                    <a href="#invitation" class="font-poppins text-white"
+                      >Undangan</a
+                    >
+                    <div class="border-navbar"></div>
+                  </div>
+                  <div class="group">
+                    <a href="#story" class="font-poppins text-white">Story</a>
+                    <div class="border-navbar"></div>
+                  </div>
+                  <div class="group">
+                    <a href="#gallery" class="font-poppins text-white"
+                      >Galeri</a
+                    >
+                    <div class="border-navbar"></div>
+                  </div>
+                  <div class="group">
+                    <a href="#rsvp" class="font-poppins text-white">RSVP</a>
+                    <div class="border-navbar"></div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- Container -->
+            <div class="container mx-auto px-5">
+              <!-- Flex -->
+              <div
+                id="updown"
+                class="flex flex-col justify-center items-start space-y-8 h-screen"
+              >
+                <h1 class="font-dancing_script text-6xl text-white">
+                  Farrel & Fitri
+                </h1>
+                <p class="font-poppins text-white">
+                  Minggu, 26 Februari 2023, pukul 08.00 s.d 10.00 WIB
+                </p>
+                <div class="flex flex-row space-x-4">
+                  <div
+                    class="flex flex-col justify-center items-center space-y-2"
+                  >
+                    <p
+                      class="font-poppins font-light text-xs text-white bg-white/20 rounded-lg p-3"
+                    >
+                      00
+                    </p>
+                    <p class="font-poppins font-light text-xs text-white">
+                      Hari
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center space-y-2"
+                  >
+                    <p
+                      class="font-poppins font-light text-xs text-white bg-white/20 rounded-lg p-3"
+                    >
+                      00
+                    </p>
+                    <p class="font-poppins font-light text-xs text-white">
+                      Jam
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center space-y-2"
+                  >
+                    <p
+                      class="font-poppins font-light text-xs text-white bg-white/20 rounded-lg p-3"
+                    >
+                      00
+                    </p>
+                    <p class="font-poppins font-light text-xs text-white">
+                      Menit
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center space-y-2"
+                  >
+                    <p
+                      class="font-poppins font-light text-xs text-white bg-white/20 rounded-lg p-3"
+                    >
+                      00
+                    </p>
+                    <p class="font-poppins font-light text-xs text-white">
+                      Detik
+                    </p>
+                  </div>
+                </div>
+                <button class="btn-custom font-poppins">Save The Date</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION QUOTE -->
+      <section id="quote" class="bg-customBrown">
+        <!-- Container Section -->
+        <div class="container reveal mx-auto py-24 px-5">
+          <!-- Flex Section -->
+          <div class="flex flex-col justify-center items-center space-y-8">
+            <p class="text-content max-w-xl font-poppins leading-relaxed">
+              “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+              pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
+              cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
+              antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu
+              benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
+              berpikir.”
+            </p>
+            <p class="text-content font-poppins">QS. Ar-Rum (30): 21</p>
+          </div>
+        </div>
+      </section>
+      <!-- BRIDE SECTION -->
+      <section id="bride">
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/section-2.jpg"
+          alt=""
+          style="
+            position: absolute;
+            height: 200vh;
+            width: 100%;
+            object-fit: cover;
+          "
+        />
+        <!-- Image Decoration -->
+        <div class="relative">
+          <div class="flex justify-between p-5">
+            <img
+              src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-light-left.svg"
+              class="w-28"
+              alt=""
+            />
+            <img
+              src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-light-right.svg"
+              class="w-28"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="relative container mx-auto px-5">
+          <div class="flex flex-col justify-center items-center space-y-4">
+            <h3 class="text-header font-dancing_script">Mempelai</h3>
+            <p class="text-content max-w-2xl font-poppins">
+              Maha Suci Allah yang telah menciptakan mahkluk-Nya
+              berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi
+              pernikahan putra-putri kami :
+            </p>
+            <div
+              class="flex flex-col justify-evenly space-y-16 pt-8 pb-16 md:flex-row md:space-y-0 lg:justify-around"
+            >
+              <!-- Item 1 -->
+              <div class="flex flex-col items-center space-y-8 lg:w-1/2">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/flowers-left-spouse.png"
+                    alt=""
+                  />
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/img-wrapper-spouse-left.png"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 lg:w-52"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/wisnu.jpg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 bg-cover rounded-full lg:w-52"
+                    alt=""
+                  />
+                </div>
+                <!-- Profile -->
+                <div
+                  class="flex flex-col justify-center items-center space-y-2 lg:pt-6"
+                >
+                  <h4 class="font-dancing_script text-header">
+                    Farrel Alamsyah
+                  </h4>
+                  <p class="font-poppins text-center text-white">
+                    Putra Pertama dari Bapak Sudrajat & Ibu Susmita
+                  </p>
+                  <!-- Button -->
+                  <a
+                    href="https://www.instagram.com/invie.id/?hl=id"
+                    class="font-poppins text-white py-4 px-6 rounded-md bg-[#6D6157] lg:text-base hover:bg-customGreen/30 flex"
+                  >
+                    <!-- Icon IG -->
+                    <svg
+                      class="w-4 fill-current mx-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                    invie.id
+                  </a>
+                  <!-- Border -->
+                  <div class="border border-white w-1/2"></div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="flex flex-col items-center space-y-8 lg:w-1/2">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/flowers-left-spouse.png"
+                    alt=""
+                  />
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/img-wrapper-spouse-left.png"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 lg:w-52"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/siren.jpg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 bg-cover rounded-full lg:w-52"
+                    alt=""
+                  />
+                </div>
+                <!-- Profile -->
+                <div
+                  class="flex flex-col justify-center items-center space-y-2 lg:pt-6"
+                >
+                  <h4 class="font-dancing_script text-header">Fitri Qonita</h4>
+                  <p class="font-poppins text-center text-white">
+                    Putri kedua dari Bapak Salam & Ibu Rahmawati
+                  </p>
+                  <!-- Button -->
+                  <a
+                    href="https://www.instagram.com/invie.id/?hl=id"
+                    class="font-poppins text-white py-4 px-6 rounded-md bg-[#6D6157] lg:text-base hover:bg-customGreen/30 flex"
+                  >
+                    <!-- Icon IG -->
+                    <svg
+                      class="w-4 fill-current mx-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                    invie.id
+                  </a>
+                  <!-- Border -->
+                  <div class="border border-white w-1/2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image Background -->
+
+      <!-- Image Decoration -->
+      <div class="relative min-h-[200vh] w-screen">
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/section-3.jpg"
+          alt=""
+          class="absolute top-0 bottom-0 h-full w-full"
+        />
+        <div class="relative flex justify-between items-center w-full p-2">
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-left.svg"
+            class="w-28"
+            alt=""
+          />
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-right.svg"
+            class="w-28"
+            alt=""
+          />
+        </div>
+
+        <!-- INVITATION SECTION -->
+        <section id="invitation">
+          <!-- Container -->
+          <div class="relative container mx-auto px-5">
+            <div class="flex flex-col justify-center items-center space-y-6">
+              <h2
+                class="font-dancing_script text-4xl text-customBrown lg:text-5xl"
+              >
+                Undangan Kami
+              </h2>
+              <p
+                class="font-poppins text-customBrown text-center max-w-2xl lg:text-lg"
+              >
+                Kami mengundang bapak/ibu/saudara/i sekaligus mengharapkan doa
+                restu dari bapak/ibu/saudara/i dalam acara pernikahan anak kami
+                pada:
+              </p>
+              <div
+                class="flex flex-col space-y-6 lg:flex-row lg:justify-between lg:items-center lg:w-1/2"
+              >
+                <div class="flex flex-col items-center space-y-6">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/icons/heart-calendar.svg"
+                    alt=""
+                  />
+                  <h3 class="font-poppins font-bold text-2xl text-center">
+                    Minggu, 26 Februari 2023
+                  </h3>
+                </div>
+                <div class="flex flex-col items-center space-y-6">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/icons/heart-clock.svg"
+                    alt=""
+                  />
+                  <h3 class="font-poppins font-bold text-2xl text-center">
+                    Pukul 08.00 s.d 10.00 WIB
+                  </h3>
+                </div>
+              </div>
+              <img
+                src="	https://wedding.invie.my.id/assets/vendors/theme-five/img/icons/heart-pin.svg"
+                alt=""
+              />
+              <h3 class="font-poppins font-bold text-2xl text-center">
+                Auditorium Masjid Assalam
+              </h3>
+              <!-- Maps -->
+              <div class="flex justify-center items-center w-full h-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126922.57258124102!2d106.80933440277745!3d-6.220090488908296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3637a31fbab%3A0x9e44dab33e9d14bd!2sAuditorium%20Masjid%20As%20Salalm!5e0!3m2!1sid!2sid!4v1676886578111!5m2!1sid!2sid"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  class="rounded-lg"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- LIVE STREAMING SECTION -->
+        <section id="live">
+          <div class="relative mt-10">
+            <div class="container mx-auto px-5">
+              <!-- Flex -->
+              <div class="flex flex-col justify-center items-center space-y-10">
+                <!-- Header Text -->
+                <h2
+                  class="font-dancing_script text-4xl text-customBrown lg:text-5xl"
+                >
+                  Live Streaming
+                </h2>
+
+                <!-- Box -->
+                <div class="relative">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/card-story.png"
+                    class="absolute h-full w-full"
+                    alt=""
+                  />
+                  <div
+                    class="relative flex flex-col justify-center items-center py-10 px-5 space-y-6"
+                  >
+                    <p
+                      class="max-w-xl font-poppins text-xs text-center text-customBrown lg:text-sm"
+                    >
+                      Temui kami secara virtual untuk menyaksikan acara
+                      pernikahan kami yang akan disiarkan langsung, dengan
+                      menekan tombol di bawah ini :
+                    </p>
+                    <!-- Icon / Image -->
+                    <img
+                      src="https://wedding.invie.my.id/assets/img/livestream/zoom-logo.png"
+                      class="w-44"
+                      alt=""
+                    />
+                    <!-- Button -->
+                    <a href="#" class="btn-custom">Zoom Live</a>
+                    <p class="font-poppins text-xs text-center text-[#2C2321]">
+                      Meeting ID: 123 123 123
+                    </p>
+                    <p class="font-poppins text-xs text-center text-[#2C2321]">
+                      Password: 123456
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row justify-between">
+              <img
+                src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-left-1.png"
+                class="w-32"
+                alt=""
+              />
+              <img
+                src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-right-1.png"
+                class="w-32"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Image Background -->
+      <div class="relative h-min-screen w-screen">
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/section-5.jpg"
+          alt=""
+          class="absolute top-0 bottom-0 h-full w-full"
+        />
+        <!-- Image Decoration -->
+        <div class="relative">
+          <div class="flex justify-between p-5">
+            <img
+              src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-left.svg"
+              class="w-28"
+              alt=""
+            />
+            <img
+              src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-right.svg"
+              class="w-28"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- PROTOCOL SECTION -->
+        <section id="protocol">
+          <!-- Container Section -->
+          <div class="relative container mx-auto px-5 pb-20">
+            <!-- Flex Section -->
+            <div class="flex flex-col justify-center items-center space-y-4">
+              <h2 class="font-dancing_script text-4xl text-white">
+                Protokol Kesehatan
+              </h2>
+              <p
+                class="max-w-2xl font-poppins text-xs text-center text-white lg:text-sm"
+              >
+                Untuk mematuhi himbauan pemerintah dalam pencegahan penyebaran
+                Covid-19, maka diharapkan Bapak/Ibu/Saudara/i tamu undangan
+                untuk :
+              </p>
+              <!-- Flex Row -->
+              <div
+                class="flex flex-col items-center justify-between text-center md:space-y-12 py-10 space-y-8 lg:flex-row lg:px-16 lg:space-y-0 lg:space-x-8 lg:pt-8"
+              >
+                <div
+                  class="flex flex-col space-y-8 md:w-1/2 md:flex-row md:space-y-0 lg:space-x-8"
+                >
+                  <!-- Item 1 -->
+                  <div class="flex flex-col items-center space-y-6">
+                    <!-- Image Container For Background & Center -->
+                    <div
+                      class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-customLightGrey"
+                    >
+                      <svg
+                        class="fill-[#5F4938] w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M0 224.2c0-22.2 3.2-43.6 9.2-63.9l227 165.1C228.5 337.8 224 352.4 224 368V512H96c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zm258.6 77.9L21 129.3C56.7 53 134.2 0 224 0h32c95.2 0 174.2 69.3 189.4 160.1c2.2 13 6.7 25.7 15 36.1l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 4.1-.6 8.1-1.6 11.9H304c-16.9 0-32.5 5.2-45.4 14.1zM352 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM256 512V368c0-26.5 21.5-48 48-48H512l-16 48H336c-8.8 0-16 7.2-16 16s7.2 16 16 16H485.3l-10.7 32H336c-8.8 0-16 7.2-16 16s7.2 16 16 16H464l-1.4 4.2c-8.7 26.1-33.2 43.8-60.7 43.8H256z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-poppins text-xs text-center text-white">
+                      Selalu memakai masker selama acara berlangsung
+                    </p>
+                  </div>
+                  <!-- Item 2 -->
+                  <div
+                    class="flex flex-col justify-center items-center space-y-6"
+                  >
+                    <div
+                      class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-customLightGrey"
+                    >
+                      <svg
+                        class="fill-[#5F4938] w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M384 64a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm96 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM128 464a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM0 160l.1 72.6c.1 52.2 24 101 64 133.1c-.1-1.9-.1-3.8-.1-5.7v-8c0-71.8 37-138.6 97.9-176.7l60.2-37.6c8.6-5.4 17.9-8.4 27.3-9.4l45.9-79.5c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8l-78 135.1c-3.3 5.7-10.7 7.7-16.4 4.4s-7.7-10.7-4.4-16.4l62-107.4c6.6-11.5 2.7-26.2-8.8-32.8S182 5 175.4 16.5l-68 117.8 0 0 0 0-43.3 75L64 160c0-17.7-14.4-32-32-32s-32 14.4-32 32zM300.1 88.5L275.5 131c13.9 4.5 26.4 13.7 34.7 27c.9 1.5 1.7 2.9 2.5 4.4l28.9-50c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8zm46.4 63.7l-26.8 46.4c-.6 6-2.1 11.8-4.3 17.4H320h13.3l0 0H365l23-39.8c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8zM283.1 175c-9.4-15-29.1-19.5-44.1-10.2l-60.2 37.6C127.3 234.7 96 291.2 96 352v8c0 8.9 .8 17.6 2.2 26.1c35.4 8.2 61.8 40 61.8 77.9c0 6.3-.7 12.5-2.1 18.4C183.1 501 214.3 512 248 512H424c13.3 0 24-10.7 24-24s-10.7-24-24-24H332c-6.6 0-12-5.4-12-12s5.4-12 12-12H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H332c-6.6 0-12-5.4-12-12s5.4-12 12-12H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H332c-6.6 0-12-5.4-12-12s5.4-12 12-12H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H320l0 0 0 0H226.8L273 219.1c15-9.4 19.5-29.1 10.2-44.1z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-poppins text-xs text-center text-white">
+                      Mencuci tangan sebelum & sesudah memasuki lokasi acara
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col space-y-8 md:w-1/2 md:flex-row md:space-y-0 lg:space-x-8"
+                >
+                  <!-- Item 3 -->
+                  <div class="flex flex-col items-center space-y-6">
+                    <!-- Image Container For Background & Center -->
+                    <div
+                      class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-customLightGrey"
+                    >
+                      <svg
+                        class="fill-[#5F4938] w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M43 64a64 64 0 1 1 128 0A64 64 0 1 1 43 64zM4.9 233.4C8.3 191.9 43 160 84.6 160h44.8c27 0 51 13.4 65.5 34.1c-2.7 1.9-5.2 4-7.5 6.3l-64 64c-21.9 21.9-21.9 57.3 0 79.2L171 391.2V464c0 26.5-21.5 48-48 48H91c-26.5 0-48-21.5-48-48V348.3C16.5 338.8-1.7 312.4 .8 282.7l4.1-49.3zM427 64a64 64 0 1 1 128 0A64 64 0 1 1 427 64zM410.6 200.4c-2.3-2.3-4.9-4.4-7.5-6.3c14.5-20.7 38.6-34.1 65.5-34.1h44.8c41.6 0 76.3 31.9 79.7 73.4l4.1 49.3c2.5 29.8-15.7 56.1-42.2 65.6V464c0 26.5-21.5 48-48 48H475c-26.5 0-48-21.5-48-48V391.2l47.6-47.6c21.9-21.9 21.9-57.3 0-79.2l-64-64zM251 240v32h96V240c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l64 64c9.4 9.4 9.4 24.6 0 33.9l-64 64c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2V336H251v32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-poppins text-xs text-center text-white">
+                      Tidak berkerumun, dengan menjaga jarak satu sama lain
+                    </p>
+                  </div>
+                  <!-- Item 4 -->
+                  <div
+                    class="flex flex-col justify-center items-center space-y-6"
+                  >
+                    <div
+                      class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-customLightGrey"
+                    >
+                      <svg
+                        class="fill-[#5F4938] w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-135-105.8c-1.1-11.4-6.3-22.3-15.3-30.7l-134.2-123-23.4 18.2-26-20.3 77.2-60.1c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2l-89.7 72.6-25.8-20.3 81.8-66.2c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-35.5 23.7L38.8 5.1zM96 171.6L40.6 128H0V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V171.6zM413.6 421.9L128 196.9V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c.8-.8 1.5-1.7 2.2-2.6zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V128H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="font-poppins text-xs text-center text-white">
+                      Tidak bersalaman, dapat menggantinya dengan salaman jarak
+                      jauh
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Image Background -->
+
+      <!-- Image Decoration -->
+      <div class="relative h-[200vh] w-screen">
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/section-3.jpg"
+          alt=""
+          class="absolute top-0 bottom-0 h-full w-full"
+        />
+        <div class="absolute flex justify-between items-center w-full p-2">
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-left.svg"
+            class="w-28"
+            alt=""
+          />
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-right.svg"
+            class="w-28"
+            alt=""
+          />
+        </div>
+
+        <!-- STORY SECTION -->
+        <section id="story-card">
+          <div
+            class="relative flex flex-col justify-center items-center space-y-2 py-16"
+          >
+            <h2 class="font-dancing_script text-4xl text-customBrown">Story</h2>
+            <p class="font-poppins text-xs text-customBrown">Cerita kami</p>
+          </div>
+          <!-- Container -->
+          <!-- <div
+          class="relative flex flex-col justify-center items-center space-y-8 px-5 lg:px-8"
+        > -->
+
+          <!-- Flex All -->
+          <div
+            class="relative overflow-hidden flex flex-col lg:flex-row justify-center space-y-4 lg:space-y-0 px-5"
+          >
+            <!-- Flex 1 -->
+            <div
+              class="flex flex-col mt-3 lg:px-0 lg:mt-16 relative lg:ml-auto lg:w-1/2 lg:pl-24 space-y-8 lg:space-y-0"
+            >
+              <!-- FLOWER SM -->
+              <div class="relative">
+                <img
+                  src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-right-1.png"
+                  class="hidden lg:block absolute right-40 -top-20"
+                  alt=""
+                />
+                <!-- Box 1 -->
+                <div class="relative">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/card-story.png"
+                    class="absolute h-full w-full"
+                    alt=""
+                  />
+                  <div
+                    class="relative flex flex-col justify-center py-10 px-5 space-y-6"
+                  >
+                    <h6>Pertemuan Kedua</h6>
+                    <p class="font-poppins text-xs text-customBrown lg:text-sm">
+                      Kami pertama kali bertemu adalah di kampus kami. Saat itu
+                      saya melihat dia sedang berjalan menuju kantin, indah
+                      sekali. Pada saat itu juga saya sudah jatuh cinta pada
+                      pandangan pertama kepadanya.
+                    </p>
+                  </div>
+                  <!-- Flower LG -->
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-left-1.png"
+                    class="absolute -top-5 right-0 w-20 lg:hidden"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- Flower 2 -->
+              <div class="relative lg:pt-36">
+                <img
+                  src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-right-1.png"
+                  class="hidden lg:block absolute right-40 top-28"
+                  alt=""
+                />
+                <!-- Box 2 -->
+                <div class="relative">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/card-story.png"
+                    class="absolute h-full w-full"
+                    alt=""
+                  />
+                  <div
+                    class="relative flex flex-col justify-center py-10 px-5 space-y-6"
+                  >
+                    <h6>Pertemuan Kedua</h6>
+                    <p class="font-poppins text-xs text-customBrown lg:text-sm">
+                      Kami pertama kali bertemu adalah di kampus kami. Saat itu
+                      saya melihat dia sedang berjalan menuju kantin, indah
+                      sekali. Pada saat itu juga saya sudah jatuh cinta pada
+                      pandangan pertama kepadanya.
+                    </p>
+                  </div>
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-right-1.png"
+                    class="absolute -top-5 left-0 w-20 lg:hidden"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Decoration Center -->
+            <div>
+              <img
+                src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/story-pillar-4.svg"
+                class="hidden lg:block"
+                alt=""
+              />
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="flex flex-col lg:px-0 lg:pt-64 relative lg:mr-auto lg:w-1/2 lg:pr-24 space-y-8 lg:space-y-0"
+            >
+              <div class="relative">
+                <img
+                  src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-left-1.png"
+                  class="hidden lg:block absolute left-40 -top-20"
+                  alt=""
+                />
+                <!-- Box 3 -->
+                <div class="relative">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/card-story.png"
+                    class="absolute h-full w-full"
+                    alt=""
+                  />
+                  <div
+                    class="relative flex flex-col justify-center py-10 px-5 space-y-6"
+                  >
+                    <h6>Pertemuan Kedua</h6>
+                    <p class="font-poppins text-xs text-customBrown lg:text-sm">
+                      Kami pertama kali bertemu adalah di kampus kami. Saat itu
+                      saya melihat dia sedang berjalan menuju kantin, indah
+                      sekali. Pada saat itu juga saya sudah jatuh cinta pada
+                      pandangan pertama kepadanya.
+                    </p>
+                  </div>
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-left-1.png"
+                    class="absolute -top-5 right-0 w-20 lg:hidden"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="relative lg:pt-36">
+                <img
+                  src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-left-1.png"
+                  class="hidden lg:block absolute left-40 top-28"
+                  alt=""
+                />
+                <!-- Box 4 -->
+                <div class="relative">
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/card-story.png"
+                    class="absolute h-full w-full"
+                    alt=""
+                  />
+                  <div
+                    class="relative flex flex-col justify-center py-10 px-5 space-y-6"
+                  >
+                    <h6>Pertemuan Kedua</h6>
+                    <p class="font-poppins text-xs text-customBrown lg:text-sm">
+                      Kami pertama kali bertemu adalah di kampus kami. Saat itu
+                      saya melihat dia sedang berjalan menuju kantin, indah
+                      sekali. Pada saat itu juga saya sudah jatuh cinta pada
+                      pandangan pertama kepadanya.
+                    </p>
+                  </div>
+                  <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/leaf-right-1.png"
+                    class="absolute -top-5 left-0 w-20 lg:hidden"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="relative h-[400vh] w-screen">
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/section-4.jpg"
+          alt=""
+          class="absolute top-0 bottom-0 h-full w-full"
+        />
+        <div class="absolute flex justify-between items-center w-full p-2">
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-black-left.svg"
+            class="w-28"
+            alt=""
+          />
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-black-right.svg"
+            class="w-28"
+            alt=""
+          />
+        </div>
+        <!-- GALLERY SECTION -->
+        <section id="gallery">
+          <!-- Container Section -->
+          <div class="relative container mx-auto px-5">
+            <div class="flex justify-center items-center">
+              <h2
+                class="text-title font-dancing_script text-4xl text-center text-white"
+              >
+                Galeri
+              </h2>
+            </div>
+
+            <div class="h-screen">
+              <!-- Carousel -->
+              <div class="wrapper w-full">
+                <i id="left" class="bg-white p-2 cursor-pointer">&larr;</i>
+                <div
+                  class="relative flex flex-row carousel cursor-pointer whitespace-nowrap overflow-hidden"
+                >
+                  <!-- <img
+                    src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/img-wrapper-gallery.png"
+                    alt=""
+                    class="w-full h-[20rem] absolute lg:w-2/3 lg:h-[25rem]"
+                  /> -->
+                  <div class="h-0 pb-2/3 sm:pt-1/3 lg:pt-2/3">
+                    <img
+                      src="images/prewed/prewed3.jpeg"
+                      class="object-cover h-64 w-full"
+                      alt=""
+                    />
+                  </div>
+                  <div class="h-0 pb-2/3 sm:pt-1/3 lg:pt-2/3">
+                    <img
+                      src="images/prewed/prewed4.jpeg"
+                      class="object-cover h-64 w-full"
+                      alt=""
+                    />
+                  </div>
+                  <div class="h-0 pb-2/3 sm:pt-1/3 lg:pt-2/3">
+                    <img
+                      src="images/prewed/prewed5.jpeg"
+                      class="object-cover h-64 w-full"
+                      alt=""
+                    />
+                  </div>
+                  <div class="h-0 pb-2/3 sm:pt-1/3 lg:pt-2/3">
+                    <img
+                      src="images/prewed/prewed6.jpeg"
+                      class="object-cover h-64 w-full"
+                      alt=""
+                    />
+                  </div>
+                  <!-- <img
+                    src="images/prewed/prewed13.jpeg"
+                    class="object-cover h-64 aspect-w-4"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed14.jpeg"
+                    class="object-cover h-64 aspect-w-4"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed15.jpeg"
+                    class="object-cover h-64 aspect-w-4"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed16.jpeg"
+                    class="object-cover h-64 aspect-w-4"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed17.jpeg"
+                    class="object-cover h-64 aspect-w-4"
+                    alt=""
+                  /> -->
+                  <!-- <img
+                    src="images/prewed/prewed10.jpeg"
+                    class="object-cover h-64 w-1/3"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed5.jpeg"
+                    class="object-cover h-64 w-1/3"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed6.jpeg"
+                    class="object-cover h-64 w-1/3"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed7.jpeg"
+                    class="object-cover h-64 w-1/3"
+                    alt=""
+                  />
+                  <img
+                    src="images/prewed/prewed8.jpeg"
+                    class="object-cover h-64 w-1/3"
+                    alt=""
+                  /> -->
+                </div>
+                <i id="right" class="bg-white p-2 cursor-pointer">&rarr;</i>
+              </div>
+            </div>
+
+            <!-- Carousel -->
+            <!-- <div class="wrapper">
+              <i id="left" class="bg-white p-2 cursor-pointer">&larr;</i>
+              <div
+                class="relative h-0 flex flex-row carousel cursor-pointer whitespace-nowrap overflow-hidden bg-red-500 lg:pb-2/3 lg:w-1/2"
+              >
+                <img
+                  src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/img-wrapper-gallery.png"
+                  alt=""
+                  class="w-full h-[20rem] absolute lg:w-2/3 lg:h-[25rem]"
+                />
+                <img
+                  src="images/prewed/prewed3.jpeg"
+                  class="object-cover h-64 w-full"
+                  alt=""
+                />
+                <img
+                  src="images/prewed/prewed10.jpeg"
+                  class="object-cover h-64 w-full"
+                  alt=""
+                />
+                <img
+                  src="images/prewed/prewed5.jpeg"
+                  class="object-cover h-64 w-full"
+                  alt=""
+                />
+                <img
+                  src="images/prewed/prewed6.jpeg"
+                  class="object-cover h-64 w-full"
+                  alt=""
+                />
+                <img
+                  src="images/prewed/prewed7.jpeg"
+                  class="object-cover h-64 w-full"
+                  alt=""
+                />
+                <img
+                  src="images/prewed/prewed8.jpeg"
+                  class="object-cover h-64 w-full"
+                  alt=""
+                />
+              </div>
+              <i id="right" class="bg-white p-2 cursor-pointer">&rarr;</i>
+            </div> -->
+
+            <!-- Video Gallery -->
+            <!-- <div class="relative">
+              <div class="flex justify-center">
+                <img
+                  src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/img-wrapper-gallery.png"
+                  alt=""
+                  class="w-full h-[20rem] absolute lg:w-2/3 lg:h-[25rem]"
+                />
+                <iframe
+                  src="https://www.youtube.com/embed/6Q0vGrB2Kcc"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="w-full h-[18rem] px-2 absolute top-4 lg:w-2/3 lg:h-[22rem] lg:top-6"
+                ></iframe>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </div>
+
+      <div class="h-0 pb-2/3 sm:pt-1/3 lg:pt-2/3">
+        <img
+          src="images/prewed/prewed3.jpeg"
+          class="object-cover h-64 w-full"
+          alt=""
+        />
+      </div>
+
+      <div class="relative h-screen w-screen">
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/section-3.jpg"
+          alt=""
+          class="absolute top-0 bottom-0 h-full w-full"
+        />
+        <div class="absolute flex justify-between items-center w-full p-2">
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-left.svg"
+            class="w-28"
+            alt=""
+          />
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-right.svg"
+            class="w-28"
+            alt=""
+          />
+        </div>
+        <!-- GIFT SECTION -->
+        <section id="gift">
+          <!-- Container Section -->
+          <div class="relative container mx-auto px-5 py-16">
+            <!-- Flex Section -->
+            <div
+              class="flex flex-col justify-center items-center space-y-8 lg:space-y-12"
+            >
+              <h2
+                class="text-title font-dancing_script text-4xl text-center text-customBrown"
+              >
+                Love Gift
+              </h2>
+              <p class="font-poppins text-center text-customBrown max-w-xl">
+                Tanpa mengurangi rasa hormat kami, bagi bapak ibu yang ingin
+                memberikan tanda kasih untuk kami, dapat melalui :
+              </p>
+              <!-- Card -->
+              <div
+                class="card-gift relative flex flex-col justify-center items-center p-4 space-y-4 rounded-md w-full lg:w-5/12"
+              >
+                <img
+                  src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/card-story.png"
+                  class="absolute inset-0 top-10 h-52 w-full"
+                  alt=""
+                />
+                <div class="absolute inset-0 px-5 space-y-4 lg:py-16">
+                  <div class="flex justify-between">
+                    <p class="text-gift">Pilih tujuan transfer:</p>
+                    <img src="images/bca.png" alt="" class="w-20" />
+                  </div>
+                  <select name="" id="" class="w-full p-2 border-2 rounded-sm">
+                    <option value="#">Bank BCA</option>
+                    <option value="#">Bank BNI</option>
+                    <option value="#">Bank BRI</option>
+                    <option value="#">Bank BSI</option>
+                    <option value="#">Bank CIMB</option>
+                    <option value="#">Bank Jago</option>
+                    <option value="#">Bank Mandiri</option>
+                    <option value="#">Jenius</option>
+                    <option value="#">DANA</option>
+                    <option value="#">GOPAY</option>
+                    <option value="#">OVO</option>
+                    <option value="#">ShopeePay</option>
+                  </select>
+                  <div>
+                    <div class="flex flex-row items-center space-x-1">
+                      <p class="text-content2 text-black">
+                        No. Rekening : <span class="font-bold"> 32523422</span>
+                      </p>
+                      <a
+                        href="#"
+                        class="w-6 border-2 rounded-md border-black p-1"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                          <path
+                            d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"
+                          />
+                        </svg>
+                      </a>
+                      <img
+                        src="https://wedding.invie.my.id/assets/img/icons/gift/default.png"
+                        class="absolute w-24 right-0 -bottom-32 overflow-hidden"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-content2 text-black">a/n Farrel Alamsyah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="relative h-min-[320vh] w-screen">
+        <img
+          src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/section-5.jpg"
+          alt=""
+          class="absolute top-0 bottom-0 h-full w-full"
+        />
+        <div class="absolute flex justify-between items-center w-full p-2">
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-left.svg"
+            class="w-28"
+            alt=""
+          />
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/decoration/foliage-dark-right.svg"
+            class="w-28"
+            alt=""
+          />
+        </div>
+        <!-- RSVP SECTION -->
+        <section id="rsvp">
+          <div class="relative contaier mx-auto px-5">
+            <div class="flex flex-col justify-center items-center">
+              <!-- Flex Section -->
+              <div
+                class="flex flex-col justify-center items-center space-y-8 py-16"
+              >
+                <h2
+                  class="text-title font-dancing_script text-4xl text-center text-white"
+                >
+                  RSVP
+                </h2>
+                <p class="text-content font-poppins text-center text-white">
+                  Tanpa mengurangi rasa hormat kami, bagi bapak ibu yang ingin
+                  memberikan tanda kasih untuk kami, dapat melalui :
+                </p>
+
+                <!-- FORM -->
+                <form
+                  action="#"
+                  class="flex flex-col justify-center space-y-3 w-full lg:w-2/3"
+                >
+                  <label class="text-white" for="nama">Nama</label>
+                  <input
+                    type="text"
+                    placeholder="Nama lengkap"
+                    class="input-custom px-6 py-3 rounded-md"
+                  />
+                  <label class="text-white" for="kehadiran"
+                    >Apakah anda bersedia hadir di acara kami?</label
+                  >
+                  <select class="input-custom px-6 py-3 rounded-md">
+                    <option selected disabled value="">Pilih salah satu</option>
+                    <option value="#">Akan Hadir</option>
+                    <option value="#">Berhalang Hadir</option>
+                    <option value="#">Ragu - Ragu</option>
+                  </select>
+                  <label class="text-white" for="jumlahtamu">Jumlah Tamu</label>
+                  <input
+                    type="number"
+                    placeholder="Jumlah Tamu (isi 0 jika tidak hadir)"
+                    class="input-custom px-6 py-3 rounded-md"
+                  />
+                  <label class="text-white" for="ucapan">Kirim ucapan</label>
+                  <textarea
+                    class="p-4 h-52 rounded-sm shadow-sm border border-black"
+                  ></textarea>
+
+                  <div class="flex justify-center items-center pt-3">
+                    <button
+                      class="font-poppins text-white py-4 px-8 rounded-md bg-customLightBrown lg:text-base hover:bg-customGreen/30"
+                    >
+                      Kirim Ucapan
+                    </button>
+                  </div>
+                </form>
+                <!-- TESTIMONI -->
+                <div class="pt-4">
+                  <!-- Item 1 -->
+                  <div class="space-y-1">
+                    <h4 class="font-poppins text-sm text-white">
+                      Muhamad Azmi Rizkifar
+                    </h4>
+                    <div class="flex space-x-1">
+                      <svg
+                        class="w-3 h-3 fill-customLightGrey"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                        />
+                      </svg>
+                      <p class="text-content font-poppins text-xs text-white">
+                        2 hari yang lalu
+                      </p>
+                    </div>
+                    <p class="font-poppins text-xs text-white">
+                      Alhamdulillah, semoga dlancarkan sampai hari bahagia ya
+                      kalian semuaa.. jaga kesehatan smpai hari H nanti 🥰🥰
+                    </p>
+                    <!-- Tab 1 -->
+                    <div
+                      class="py-1 border-b outline-none group"
+                      tabindex="1"
+                    ></div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="space-y-1">
+                    <h4 class="font-poppins text-sm text-white">
+                      Muhamad Azmi Rizkifar
+                    </h4>
+                    <div class="flex space-x-1">
+                      <svg
+                        class="w-3 h-3 fill-customLightGrey"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                        />
+                      </svg>
+                      <p class="text-content font-poppins text-xs text-white">
+                        2 hari yang lalu
+                      </p>
+                    </div>
+                    <p class="font-poppins text-xs text-white">
+                      Alhamdulillah, semoga dlancarkan sampai hari bahagia ya
+                      kalian semuaa.. jaga kesehatan smpai hari H nanti 🥰🥰
+                    </p>
+                    <!-- Tab 1 -->
+                    <div
+                      class="py-1 border-b outline-none group"
+                      tabindex="1"
+                    ></div>
+                  </div>
+                  <!-- Item 3 -->
+                  <div class="space-y-1">
+                    <h4 class="font-poppins text-sm text-white">
+                      Muhamad Azmi Rizkifar
+                    </h4>
+                    <div class="flex space-x-1">
+                      <svg
+                        class="w-3 h-3 fill-customLightGrey"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                        />
+                      </svg>
+                      <p class="text-content font-poppins text-xs text-white">
+                        2 hari yang lalu
+                      </p>
+                    </div>
+                    <p class="font-poppins text-xs text-white">
+                      Alhamdulillah, semoga dlancarkan sampai hari bahagia ya
+                      kalian semuaa.. jaga kesehatan smpai hari H nanti 🥰🥰
+                    </p>
+                    <!-- Tab 1 -->
+                    <div
+                      class="py-1 border-b outline-none group"
+                      tabindex="1"
+                    ></div>
+                  </div>
+                  <!-- Item 4 -->
+                  <div class="space-y-1">
+                    <h4 class="font-poppins text-sm text-white">
+                      Muhamad Azmi Rizkifar
+                    </h4>
+                    <div class="flex space-x-1">
+                      <svg
+                        class="w-3 h-3 fill-customLightGrey"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                        />
+                      </svg>
+                      <p class="text-content font-poppins text-xs text-white">
+                        2 hari yang lalu
+                      </p>
+                    </div>
+                    <p class="font-poppins text-xs text-white">
+                      Alhamdulillah, semoga dlancarkan sampai hari bahagia ya
+                      kalian semuaa.. jaga kesehatan smpai hari H nanti 🥰🥰
+                    </p>
+                    <!-- Tab 1 -->
+                    <div
+                      class="py-1 border-b outline-none group"
+                      tabindex="1"
+                    ></div>
+                  </div>
+                  <!-- Item 5 -->
+                  <div class="space-y-1">
+                    <h4 class="font-poppins text-sm text-white">
+                      Muhamad Azmi Rizkifar
+                    </h4>
+                    <div class="flex space-x-1">
+                      <svg
+                        class="w-3 h-3 fill-customLightGrey"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                        />
+                      </svg>
+                      <p class="text-content font-poppins text-xs text-white">
+                        2 hari yang lalu
+                      </p>
+                    </div>
+                    <p class="font-poppins text-xs text-white">
+                      Alhamdulillah, semoga dlancarkan sampai hari bahagia ya
+                      kalian semuaa.. jaga kesehatan smpai hari H nanti 🥰🥰
+                    </p>
+                    <!-- Tab 1 -->
+                    <div
+                      class="py-1 border-b outline-none group"
+                      tabindex="1"
+                    ></div>
+                  </div>
+                  <!-- Item 6 -->
+                  <div class="space-y-1">
+                    <h4 class="font-poppins text-sm text-white">
+                      Muhamad Azmi Rizkifar
+                    </h4>
+                    <div class="flex space-x-1">
+                      <svg
+                        class="w-3 h-3 fill-customLightGrey"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                        />
+                      </svg>
+                      <p class="text-content font-poppins text-xs text-white">
+                        2 hari yang lalu
+                      </p>
+                    </div>
+                    <p class="font-poppins text-xs text-white">
+                      Alhamdulillah, semoga dlancarkan sampai hari bahagia ya
+                      kalian semuaa.. jaga kesehatan smpai hari H nanti 🥰🥰
+                    </p>
+                    <!-- Tab 1 -->
+                    <div
+                      class="py-1 border-b outline-none group"
+                      tabindex="1"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  WISH SECTION -->
+        <section id="wish" aria-label="wish-carousel">
+          <div class="container mx-auto py-28">
+            <!-- Flex Section -->
+            <div
+              class="relative flex flex-col items-center justify-center text-center space-y-10"
+            >
+              <!-- Header -->
+              <div
+                class="flex flex-col justify-center items-center space-y-4 pb-8"
+              >
+                <h2
+                  class="text-title font-dancing_script text-4xl text-center text-white"
+                >
+                  Friend Wishes
+                </h2>
+                <p class="text-content font-poppins text-center text-white">
+                  Best Wishes
+                </p>
+              </div>
+              <!-- Carousel -->
+              <div class="carousel">
+                <!-- Carousel Item 1 -->
+                <div class="flex flex-col justify-center items-center">
+                  <div class="carousel__item carousel__item--selected">
+                    <!-- Flex Logo & Text -->
+                    <div
+                      class="flex flex-col items-center justify-center space-y-1"
+                    >
+                      <img
+                        src="images/avatar/male.png"
+                        alt=""
+                        class="w-24 pb-4"
+                      />
+                      <div
+                        class="font-poppins font-semibold tracking-widest uppercase text-xs text-white"
+                      >
+                        Andy Yusuf
+                      </div>
+                      <div
+                        class="font-poppins font-semibold tracking-widest uppercase text-xs text-white"
+                      >
+                        Sahabat Mempelai Pria
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-wish max-w-md pt-6">
+                        "Selamat ya Farrel & Fitri. Semoga menjadi keluarga yang
+                        sakinnah mawaddah warrahmah. Selamat menempuh hidup
+                        baru!"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Carousel Item 2 -->
+                <div class="flex flex-col justify-center items-center">
+                  <div class="carousel__item">
+                    <!-- Flex Logo & Text -->
+                    <div
+                      class="flex flex-col items-center justify-center space-y-1"
+                    >
+                      <img
+                        src="images/avatar/male.png"
+                        alt=""
+                        class="w-24 pb-4"
+                      />
+                      <div
+                        class="font-poppins font-semibold tracking-widest uppercase text-sm text-white"
+                      >
+                        Andy Yusuf
+                      </div>
+                      <div
+                        class="font-poppins font-semibold tracking-widest uppercase text-sm text-white"
+                      >
+                        Sahabat Mempelai Pria
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-wish max-w-md">
+                        "Selamat ya Farrel & Fitri. Semoga menjadi keluarga yang
+                        sakinnah mawaddah warrahmah. Selamat menempuh hidup
+                        baru!"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Carousel Item 3 -->
+                <div class="flex flex-col justify-center items-center">
+                  <div class="carousel__item">
+                    <!-- Flex Logo & Text -->
+                    <div
+                      class="flex flex-col items-center justify-center space-y-1"
+                    >
+                      <img
+                        src="images/avatar/male.png"
+                        alt=""
+                        class="w-24 pb-4"
+                      />
+                      <div
+                        class="font-poppins font-semibold tracking-widest uppercase text-sm text-white"
+                      >
+                        Andy Yusuf
+                      </div>
+                      <div
+                        class="font-poppins font-semibold tracking-widest uppercase text-sm text-white"
+                      >
+                        Sahabat Mempelai Pria
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-wish max-w-md">
+                        "Selamat ya Farrel & Fitri. Semoga menjadi keluarga yang
+                        sakinnah mawaddah warrahmah. Selamat menempuh hidup
+                        baru!"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__nav">
+                  <span class="carousel__button"></span>
+                  <span class="carousel__button"></span>
+                  <span class="carousel__button"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CLOSES SECTION -->
+      <section id="closes">
+        <!-- Container Section -->
+        <div
+          class="relative flex flex-col justify-center items-center h-[65vh] w-screen"
+        >
+          <img
+            src="https://wedding.invie.my.id/assets/vendors/theme-five/img/bg/backhottiegreen-1.png"
+            class="absolute top-0 bottom-0 h-full w-full"
+            alt=""
+          />
+          <div class="absolute container mx-auto">
+            <!-- Flex Section -->
+            <div
+              class="flex flex-col justify-center items-center space-y-8 lg:space-y-12"
+            >
+              <!-- Content -->
+              <h4 class="font-dancing_script text-2xl text-center">
+                Terimakasih atas doa restunya
+              </h4>
+              <h2 class="font-dancing_script text-4xl text-center">
+                Farel & Fitri
+              </h2>
+              <!-- Image Decoration -->
+              <img
+                src="https://wedding.invie.my.id/assets/vendors/theme-three/img/decoration/closing.png"
+                class="w-56 lg:w-60"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="bg-customLightBrown">
+        <!-- Container Section -->
+        <div class="container mx-auto px-5 py-5">
+          <!-- Flex Section -->
+          <div
+            class="flex flex-col justify-between space-y-4 lg:space-y-0 lg:flex-row"
+          >
+            <!-- Content -->
+            <p class="text-content2 text-white">
+              © 2022 Invie ID. All Rights Reserved.
+            </p>
+            <p class="text-content2 text-white">
+              Made with &hearts; by Invie.id
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

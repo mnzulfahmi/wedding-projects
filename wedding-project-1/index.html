@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Wedding Project 1</title>
+  </head>
+
+  <body>
+    <!-- <div
+      id="overlay"
+      class="hidden z-10 -mt-10 absolute bg-cover bg-no-repeat bg-center h-[110vh] w-full"
+      style="
+        background-image: url('https://wedding.invie.my.id/assets/img/prewed/prewed6.jpeg');
+      "
+    >
+      <div
+        class="h-full bg-black/60 flex justify-center items-center flex-col text-white"
+      >
+        <img
+          src="https://wedding.invie.my.id/assets/img/icons/wedding_ring.png"
+          alt="invie_logo"
+          class="w-[70px]"
+        />
+        <p class="py-6">The Wedding of</p>
+        <h2 class="font-sacramento text-6xl">Farrel & Fitri</h2>
+        <p class="pt-5">Kepada Yth.</p>
+        <p class="pb-5">Bapak/Ibu/Saudara/i</p>
+        <p class="text-2xl border-b-2 pb-2 px-6">Tamu Undangan</p>
+        <p class="text-xs mt-6">
+          *Mohon maaf bila ada kesalahan penulisan nama dan gelar
+        </p>
+        <button
+          id="open-invitation"
+          class="bg-customPink hover:bg-customPink/75 text-white font-bold py-2 mt-10 px-4 rounded-full"
+        >
+          <i class="fa-solid fa-book-open mr-1"></i>
+          Buka Undangan
+        </button>
+      </div>
+    </div> -->
+
+    <div id="body-invitation">
+      <!-- Hero Section  -->
+      <section id="hero" class="h-screen">
+        <!-- Background Blend -->
+        <div
+          class="h-full bg-black/60 flex justify-center items-center flex-col text-white"
+        >
+          <nav class="absolute mx-auto left-0 px-6 top-4 lg:px-14 lg:top-10">
+            <h3
+              class="font-sacramento text- font-semibold tracking-wider leading-10"
+            >
+              Wedding
+            </h3>
+          </nav>
+          <h2 class="font-sacramento font-semibold text-5xl lg:text-8xl">
+            Farrel & Fitri
+          </h2>
+          <p class="py-3 text-xl">We Are Getting Married</p>
+          <div class="flex gap-2 mt-6">
+            <div class="relative">
+              <div
+                class="bg-customPink p-9 rounded-full animate-zoomInOut"
+              ></div>
+              <div
+                class="absolute w-full top-2 left-0 right-0 mx-auto text-center"
+              >
+                <p class="text-lg font-bold">299</p>
+                <p class="text-sm">Days</p>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="bg-customPink p-9 rounded-full animate-zoomInOut"
+              ></div>
+              <div
+                class="absolute w-full top-2 left-0 right-0 mx-auto text-center"
+              >
+                <p class="text-lg font-bold">19</p>
+                <p class="text-sm">Hours</p>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="bg-customPink p-9 rounded-full animate-zoomInOut"
+              ></div>
+              <div
+                class="absolute w-full top-2 left-0 right-0 mx-auto text-center"
+              >
+                <p class="text-lg font-bold">40</p>
+                <p class="text-sm">Minutes</p>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="bg-customPink p-9 rounded-full animate-zoomInOut"
+              ></div>
+              <div
+                class="absolute w-full top-2 left-0 right-0 mx-auto text-center"
+              >
+                <p class="text-lg font-bold">59</p>
+                <p class="text-sm">Seconds</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="bg-white text-customPink py-3 mt-10 px-5 uppercase rounded-full hover:bg-customPink hover:text-white hover:shadow-lg"
+          >
+            Save The Date
+          </button>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="pt-12 pb-32 lg:pt-32">
+        <div class="relative container px-6 mx-auto">
+          <div class="flex flex-col items-center justify-center text-center">
+            <h3 class="max-w-lg text-customPink lg:max-w-3xl">Hello!</h3>
+            <p
+              class="max-w-lg text-xl font-semibold text-center pt-6 lg:text-2xl lg:max-w-3xl"
+            >
+              28 November 2021. Bogor, Indonesia
+            </p>
+            <p class="max-w-lg text-center my-3 lg:text-lg lg:max-w-3xl">
+              Assalamu'alaikum Warahamatullahi Wabarakatuh
+            </p>
+            <p
+              class="max-w-lg text-center text-gray-500 lg:text-lg lg:max-w-3xl"
+            >
+              Maha Suci Allah yang telah menciptakan mahkluk-Nya
+              berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi
+              pernikahan putra-putri kami :
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center space-y-8 mt-20 lg:flex-row lg:space-y-0"
+          >
+            <!-- Item 1 -->
+            <div
+              class="flex flex-col items-center justify-between text-center space-y-4 lg:flex-row-reverse lg:text-right lg:space-x-reverse lg:space-x-4"
+            >
+              <img
+                src="../images/prewed/wisnu2.jpg"
+                alt=""
+                class="rounded-full w-36 max-w-lg"
+              />
+              <div class="flex flex-col space-y-2">
+                <h1 class="text-3xl text-customPink font-bold mb-2">
+                  Farrel Alamsyah
+                </h1>
+                <p class="max-w-lg lg:max-w-3xl">
+                  Putra Pertama dari Bapak Sudrajat & Ibu Susmita
+                </p>
+
+                <div class="flex mx-auto space-x-2 lg:mx-0 lg:justify-end">
+                  <a
+                    href="https://www.instagram.com/invie.id/?hl=id"
+                    class="text-sm flex group items-center p-3 space-x-1 px-6 bg-customPink text-white rounded-3xl hover:bg-customPink/70 hover:text-customPink"
+                  >
+                    <img src="images/icon-instagram.svg" alt="" class="w-4" />
+                    <p>invie.id</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="flex flex-col items-center justify-between text-center space-y-4 lg:flex-row lg:text-left lg:space-x-5"
+            >
+              <img
+                src="../images/prewed/siren.jpg"
+                alt=""
+                class="rounded-full w-36 max-w-lg"
+              />
+              <div class="flex flex-col space-y-2">
+                <h1 class="text-3xl text-customPink font-bold mb-2">
+                  Fitri Qonita
+                </h1>
+                <p class="max-w-lg lg:max-w-3xl">
+                  Putra Pertama dari Bapak Sudrajat & Ibu Susmita
+                </p>
+
+                <div class="flex mx-auto space-x-2 lg:mx-0">
+                  <a
+                    href="https://www.instagram.com/invie.id/?hl=id"
+                    class="text-sm flex items-center group space-x-1 p-3 px-6 bg-customPink text-white rounded-3xl hover:bg-customPink/30 hover:text-customPink"
+                  >
+                    <img src="images/icon-instagram.svg" alt="" class="w-4" />
+                    <p>invie.id</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features Section -->
+      <section id="event">
+        <!-- Background Blend -->
+        <div
+          class="h-full bg-neutral-700/60 flex justify-center items-center flex-col text-white"
+        >
+          <!-- Features Container -->
+          <div
+            class="container mx-auto space-y-6 px-6 pb-32 mt-10 text-white lg:mt-28"
+          >
+            <!-- Header Content -->
+            <h4>Our Special Event</h4>
+            <h3>Wedding Event</h3>
+            <div
+              class="flex flex-col justify-center items-center space-y-4 text-center lg:flex-row lg:space-y-0 lg:space-x-8 lg:px-36 lg:py-16"
+            >
+              <!-- Card Event 1 -->
+              <div class="border">
+                <div class="background-blend space-y-4 p-4">
+                  <h2 class="text-w-lg pb-4 uppercase border-b w-11/12">
+                    Akad Nikah
+                  </h2>
+                  <div class="flex justify-evenly py-6 px-6 space-x-4">
+                    <div
+                      class="flex flex-col items-center justify-between space-y-2"
+                    >
+                      <img src="images/clock-regular.svg" alt="" class="w-6" />
+                      <p class="max-w-xs">08.00 s.d 10.00 WIB</p>
+                    </div>
+                    <div
+                      class="flex flex-col items-center justify-between space-y-2"
+                    >
+                      <img
+                        src="images/calendar-regular.svg"
+                        alt=""
+                        class="w-6"
+                      />
+                      <p class="max-w-xs">Selasa, 28 November 2021</p>
+                    </div>
+                  </div>
+                  <h4>Auditorium Masjid Assalam</h4>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3074542903328!2d107.6316854!3d-6.973007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sUniversitas%20Telkom!5e0!3m2!1sid!2sid!4v1676201194595!5m2!1sid!2sid"
+                      width="300"
+                      height="150"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                  <a
+                    href="https://www.instagram.com/invie.id/?hl=id"
+                    class="text-sm p-3 my-4 w-32 rounded-xl capitalize bg-customPink hover:bg-customPink/90"
+                    >Open Maps</a
+                  >
+                </div>
+              </div>
+              <!-- Card Event 2 -->
+              <div class="border flex flex-col justify-center items-center">
+                <div class="background-blend space-y-4 p-4">
+                  <h2 class="text-w-lg pb-4 uppercase border-b w-11/12">
+                    Resepsi Pernikahan
+                  </h2>
+                  <div class="flex justify-evenly py-6 px-6 space-x-4">
+                    <div
+                      class="flex flex-col items-center justify-between space-y-2"
+                    >
+                      <img src="images/clock-regular.svg" alt="" class="w-6" />
+                      <p>08.00 s.d 10.00 WIB</p>
+                    </div>
+                    <div
+                      class="flex flex-col items-center justify-between space-y-2"
+                    >
+                      <img
+                        src="images/calendar-regular.svg"
+                        alt=""
+                        class="w-6"
+                      />
+                      <p class="max-w-xs">Selasa, 28 November 2021</p>
+                    </div>
+                  </div>
+                  <h4>Auditorium Masjid Assalam</h4>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3074542903328!2d107.6316854!3d-6.973007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sUniversitas%20Telkom!5e0!3m2!1sid!2sid!4v1676201194595!5m2!1sid!2sid"
+                    width="300"
+                    height="150"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <a
+                    href="https://www.instagram.com/invie.id/?hl=id"
+                    class="text-sm p-3 w-32 rounded-xl capitalize bg-customPink hover:bg-customPink/90"
+                    >Open Maps</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Live Streaming/Content 2 -->
+      <section id="live" class="bg-neutral-100">
+        <!-- Features Container -->
+        <div class="container mx-auto pb-32 pt-12 lg:pt-32">
+          <!-- Boxes Container -->
+          <div class="flex flex-col items-center mx-auto space-y-10">
+            <h3 class="text-customPink">Live Streaming</h3>
+            <!-- Box -->
+            <div
+              class="flex items-center justify-center flex-col w-11/12 px-8 py-6 space-y-4 text-center rounded-2xl shadow-xl bg-white max-w-md"
+            >
+              <!-- Text Pembuka -->
+              <p class="max-w-lg text-neutral-500 pt-6">
+                Temui kami secara virtual untuk menyaksikan acara pernikahan
+                kami yang akan disiarkan langsung, dengan menekan tombol di
+                bawah ini :
+              </p>
+              <!-- Image -->
+              <div class="flex justify-center">
+                <img src="images/zoom.png" alt="" class="w-44" />
+              </div>
+
+              <a
+                href="#"
+                class="block mx-auto max-w- w-44 py-3 rounded-3xl text-white uppercase bg-customPink hover:bg-customPink/80"
+                >Zoom Live</a
+              >
+              <p>Meeting ID: 123 123 123</p>
+              <p>Password: 123456</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Content 3 -->
+      <section id="content-3" class="font-poppins text-neutral-500">
+        <!-- Features Container -->
+        <div class="container mx-auto text-center px-6 pb-32 lg:px-20">
+          <!-- Text -->
+          <div class="flex flex-col space-y-6 py-12 items-center lg:py-32">
+            <h3 class="text-customPink">Protokol Kesehatan</h3>
+            <p class="max-w-lg lg:text-lg">
+              Untuk mematuhi himbauan pemerintah dalam pencegahan penyebaran
+              Covid-19, maka diharapkan Bapak/Ibu/Saudara/i tamu undangan untuk
+              :
+            </p>
+          </div>
+          <!-- First Row -->
+          <div
+            class="flex flex-col space-y-14 text-center lg:flex-row lg:space-y-0 lg:space-x-8"
+          >
+            <!-- Row 1 -->
+            <div
+              class="flex space-x-6 items-center justify-center lg:space-x-8"
+            >
+              <!-- Item 1 -->
+              <div class="flex flex-col">
+                <div class="flex items-center justify-center h-24 mb-6">
+                  <img src="images/rounded-logo.png" alt="" class="w-20" />
+                </div>
+                <p class="max-w-xs">
+                  Selalu memakai masker selama acara berlangsung
+                </p>
+              </div>
+              <!-- Item 2 -->
+              <div class="flex flex-col">
+                <div class="flex items-center justify-center h-24 mb-6">
+                  <img src="images/rounded-logo.png" alt="" class="w-20" />
+                </div>
+                <p class="max-w-xs">
+                  Selalu memakai masker selama acara berlangsung
+                </p>
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div
+              class="flex space-x-6 items-center justify-center lg:space-x-8"
+            >
+              <!-- Item 3 -->
+              <div class="flex flex-col">
+                <div class="flex items-center justify-center h-24 mb-6">
+                  <img src="images/rounded-logo.png" alt="" class="w-20" />
+                </div>
+                <p class="max-w-xs">
+                  Selalu memakai masker selama acara berlangsung
+                </p>
+              </div>
+              <!-- Item 4 -->
+              <div class="flex flex-col">
+                <div class="flex items-center justify-center h-24 mb-6">
+                  <img src="images/rounded-logo.png" alt="" class="w-20" />
+                </div>
+                <p class="max-w-xs">
+                  Selalu memakai masker selama acara berlangsung
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Content 4 -->
+      <section id="content-4" class="font-poppins text-neutral-500">
+        <div
+          class="h-full bg-neutral-700/60 flex justify-center items-center flex-col text-white"
+        >
+          <!-- Features Container -->
+          <div class="container mx-auto pt-12 pb-32">
+            <div class="flex flex-col items-center justify-center space-y-6">
+              <div
+                class="flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <h3>Love Gift</h3>
+                <p
+                  class="max-w-xs text-md text-center text-neutral-300 lg:max-w-xl"
+                >
+                  Kedatangan dan do'a anda sekalian sudah menjadi keberkahan
+                  untuk kami. Namun, jika anda ingin memberikan tanda kasih,
+                  kami menyediakan amplop digital untuk memudahkan anda.
+                </p>
+              </div>
+              <!-- Card -->
+              <div class="bg-white text-black p-4 mx-8 rounded-2xl max-w-md">
+                <!-- Flex Container -->
+                <div class="flex flex-col p-4 space-y-4">
+                  <!-- Content -->
+                  <div class="flex space-x-2 text-black lg:space-x-14 lg:px-8">
+                    <div class="flex">
+                      <label for="#">Pilih tujuan transfer:</label>
+                    </div>
+
+                    <div class="flex">
+                      <p class="max-w-lg">Logo</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col border py-4">
+                    <select name="" id="" class="w-full px-16">
+                      <option value="#">Bank BCA</option>
+                      <option value="#">Bank BNI</option>
+                      <option value="#">Bank BRI</option>
+                      <option value="#">Bank BSI</option>
+                      <option value="#">Bank CIMB</option>
+                      <option value="#">Bank Jago</option>
+                      <option value="#">Bank Mandiri</option>
+                      <option value="#">Jenius</option>
+                      <option value="#">DANA</option>
+                      <option value="#">GOPAY</option>
+                      <option value="#">OVO</option>
+                      <option value="#">ShopeePay</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <p>No. Rekening : 32523422</p>
+                    <p>a/n Farrel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Story -->
+      <section id="story" class="py-12">
+        <div class="container mx-auto px-3">
+          <h4 class="mb-4">WE LOVE EACH OTHER</h4>
+          <h3 class="mb-4 text-customPink">Our Story</h3>
+          <p class="max-w-xs mx-auto text-center lg:max-w-lg lg:py-4">
+            "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+            pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+            dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
+            kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
+            terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+          </p>
+          <p class="mt-4 max-w-xs mx-auto text-center lg:max-w-md">
+            Q.S Ar-Rum : 21
+          </p>
+        </div>
+      </section>
+      <!-- Story Card Section -->
+      <section id="story-card" class="pb-32">
+        <!-- Container -->
+        <div
+          class="relative container mx-auto px-6 flex flex-col space-y-8 lg:px-8"
+        >
+          <!-- Line -->
+          <div
+            class="absolute z-0 w-0.5 h-full bg-neutral-300 shadow-md inset-0 left-14 md:mx-auto md:right-0 md:left-0"
+          ></div>
+          <!-- Relative -->
+          <div class="relative z-10">
+            <!-- Image -->
+            <img src="images/prewed/prewed1.jpeg" alt="" class="timeline-img" />
+            <!-- Timeline Container -->
+            <div class="timeline-container timeline-container-left">
+              <!-- Shape -->
+              <div
+                class="timeline-pointer timeline-pointer-left border-b-2 border-l-1 md:border-t-1 md:border-r-2 md:border-b-0 md:border-l-0"
+                aria-hidden="true"
+              ></div>
+              <!-- Card -->
+              <div class="bg-white p-8 rounded-md shadow-md space-y-2">
+                <h2 class="font-semibold text-black text-xl">
+                  Pertemuan Pertama
+                </h2>
+                <h6 class="tracking-widest text-xs">DECEMBER 25, 2015</h6>
+                <p class="text-sm">
+                  Kami pertama kali bertemu adalah di kampus kami. Saat itu saya
+                  melihat dia sedang berjalan menuju kantin, indah sekali. Pada
+                  saat itu juga saya sudah jatuh cinta pada pandangan pertama
+                  kepadanya.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative z-10">
+            <img src="images/prewed/prewed2.jpeg" alt="" class="timeline-img" />
+            <div class="timeline-container">
+              <div
+                class="timeline-pointer border-b-2 border-l-1"
+                aria-hidden="true"
+              ></div>
+              <div class="bg-white p-8 rounded-md shadow-md space-y-2">
+                <h2 class="font-semibold text-black text-xl">First Date</h2>
+                <h6 class="tracking-widest text-xs">DECEMBER 28, 2015</h6>
+                <p class="text-sm">
+                  Kencan pertama kami dimulai ketika saya memberanikan diri
+                  untuk menyatakan perasaan saya kepadanya, dan saya tak
+                  menyangka ternayata dia juga mencintai saya. Kami pun
+                  berjalan-jalan mengitari kota pada saat itu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative z-10">
+            <img src="images/prewed/prewed3.jpeg" alt="" class="timeline-img" />
+            <div class="timeline-container timeline-container-left">
+              <div
+                class="timeline-pointer timeline-pointer-left border-b-2 border-l-1 md:border-t-1 md:border-r-2 md:border-b-0 md:border-l-0"
+                aria-hidden="true"
+              ></div>
+              <div class="bg-white p-8 rounded-md shadow-md space-y-2">
+                <h2 class="font-semibold text-black text-xl">
+                  In A Relationship
+                </h2>
+                <h6 class="tracking-widest text-xs">JANUARY 1, 2016</h6>
+                <p class="text-sm">
+                  Setiap hubungan pasti memiliki roller coasternya sendiri,
+                  begitu juga dengan kami. Susah, senang, sedih, berantem,
+                  baikan, kami jalani bersama-sama. Alhamdulillah dengan baiknya
+                  komunikasi hubungan kami dapat berjalan dengan lancar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative z-10">
+            <img src="images/prewed/prewed4.jpeg" alt="" class="timeline-img" />
+            <div class="timeline-container">
+              <div
+                class="timeline-pointer border-b-2 border-l-1"
+                aria-hidden="true"
+              ></div>
+              <div class="bg-white p-8 rounded-md shadow-md space-y-2">
+                <h2 class="font-semibold text-black text-xl">To The Wedding</h2>
+                <h6 class="tracking-widest text-xs">JANUARY 25, 2016</h6>
+                <p class="text-sm">
+                  Pada momen ini saya yakin dialah tulang rusuk saya, separuh
+                  hidup saya. Momen spesial kami akan dimulai pada titik ini,
+                  momen kebahagiaan kami bersama membangun keluarga kecil kami.
+                  Kami siap memulai petualangan baru.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Archieve 2 -->
+      </section>
+
+      <!-- Section Gallery -->
+      <section id="gallery" class="bg-neutral-100">
+        <!-- Container -->
+        <div class="container mx-auto px-5 py-16 space-y-3 lg:px-24 lg:py-28">
+          <!-- Text -->
+          <div
+            class="flex flex-col items-center justify-center text-center space-y-2 py-12 lg:py-28"
+          >
+            <h4>OUR MEMORIES</h4>
+            <h3 class="text-customPink">Wedding Gallery</h3>
+          </div>
+          <!-- Gallery Container -->
+          <div
+            class="grid grid-cols-2 gap-1 gap-y-3 pt-16 lg:grid-cols-3 lg:gap-3 lg:pt-24"
+          >
+            <!-- Image 1 -->
+            <div class="aspect-w-14 aspect-h-16">
+              <img
+                src="images/prewed/prewed3.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+            <!-- Image 1 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed4.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+
+            <!-- Image 3 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed5.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+
+            <!-- Image 4 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed6.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+            <!-- Image 5 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed7.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+            <!-- Image 6 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed8.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+            <!-- Image 7 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed9.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+            <!-- Image 8 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed10.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+            <!-- Image 9 -->
+            <div
+              class="aspect-w-14 aspect-h-16 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-3 lg:aspect-h-4"
+            >
+              <img
+                src="images/prewed/prewed11.jpeg"
+                alt=""
+                class="object-cover shadow-lg rounded-lg"
+              />
+            </div>
+          </div>
+          <!-- Video Gallery -->
+          <!-- Flex -->
+          <div class="flex items-center justify-center">
+            <div class="flex-1 space-y-1">
+              <div class="aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/6Q0vGrB2Kcc"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="rounded-lg shadow-lg"
+                ></iframe>
+              </div>
+              <p class="text-content-2 text-start">
+                source :
+                <span class="text-customPink"
+                  >https://www.youtube.com/watch?v=6Q0vGrB2Kcc
+                </span>
+              </p>
+              <p class="text-content-2 text-start">*Video hanyalah contoh</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section RSVP -->
+      <section id="rsvp">
+        <!-- Background Blend -->
+        <div
+          class="h-full bg-black/50 flex justify-center items-center flex-col text-white"
+        >
+          <!-- Container -->
+          <div class="container mx-auto py-16 px-8 lg:py-28">
+            <!-- Flex Container -->
+            <div
+              class="flex flex-col items-center justify-between text-center space-y-2"
+            >
+              <h3 class="max-w-lg">RSVP</h3>
+              <p class="text-md text-white text-poppins max-w-lg">
+                Silahkan isi form berikut, jika Bapak/Ibu/Saudara/i berkenan
+                untuk hadir. Terimakasih.
+              </p>
+              <!-- Grid Input -->
+              <div
+                class="grid items-center w-full gap-2 pt-8 max-w-3xl lg:grid-cols-3 lg:gap-x-8 lg:pt-20"
+              >
+                <!-- Input -->
+                <input
+                  type="text"
+                  class="p-3 text-white bg-white/10 rounded-sm placeholder-white"
+                  placeholder="Nama"
+                />
+
+                <input
+                  type="text"
+                  class="p-3 text-white bg-white/10 rounded-sm placeholder-white"
+                  placeholder="Ucapan"
+                />
+
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  class="p-3 text-white bg-white/10 rounded-sm placeholder-white"
+                  placeholder="Jumlah Tamu (Isi 0 jika tidak hadir)"
+                />
+
+                <select
+                  name=""
+                  id=""
+                  class="p-3 text-white bg-white/10 rounded-sm"
+                >
+                  <option value="">Akan Hadir</option>
+                  <option value="">Berhalang Hadir</option>
+                  <option value="">Ragu - ragu</option>
+                </select>
+
+                <button
+                  class="submit bg-customPink p-3 text-white rounded-3xl uppercase"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Friend Wishes -->
+      <section id="wishes">
+        <div class="container mx-auto py-12">
+          <!-- Flex Container -->
+          <div
+            class="flex flex-col items-center justify-center text-center space-y-4 px-4"
+          >
+            <!-- Header Text -->
+            <h4 class="text-customGrey">Best Wishes</h4>
+            <h3 class="text-customPink">Friend Wishes</h3>
+
+            <!-- Flex Logo & Text -->
+            <div
+              class="flex flex-col items-center justify-center space-y-1 pb-6 pt-20"
+            >
+              <img src="images/avatar/male.png" alt="" class="w-24 pb-4" />
+              <p class="text-xs font-semibold uppercase">Andi Yusuf</p>
+              <h4 class="text-customGrey">Sahabat mempelai pria</h4>
+            </div>
+
+            <p class="text-xl italic max-w-md text-center">
+              "Selamat ya Farrel & Fitri. Semoga menjadi keluarga yang sakinnah
+              mawaddah warrahmah. Selamat menempuh hidup baru!"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Send Wishes -->
+      <section id="send-wishes">
+        <!-- Container -->
+        <div class="container mx-auto py-12 px-4">
+          <!-- Flex Container -->
+          <div class="flex flex-col justify-center items-center py-8">
+            <h3 class="text-customPink">Send Wishes</h3>
+            <div
+              class="flex flex-col justify-center w-full pt-8 space-y-3 lg:w-2/3"
+            >
+              <label for="nama">Nama</label>
+              <input
+                type="text"
+                placeholder="Nama"
+                class="p-4 px-4 w-full rounded-sm shadow-sm border"
+              />
+              <label for="nama">Pesan</label>
+              <textarea
+                placeholder="Ucapan Selamat & Doa"
+                class="px-4 w-full rounded-sm shadow-sm border"
+              ></textarea>
+
+              <div class="pt-3">
+                <button
+                  class="bg-customPink hover:bg-customPink/80 text-white p-2 px-6 justify-start rounded-3xl"
+                >
+                  Kirim
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-neutral-100">
+        <!-- Container -->
+        <div class="container py-12 mx-auto lg:py-28">
+          <!-- Footer Flex Container -->
+          <div class="flex flex-col items-center space-y-1">
+            <h3 class="text-customPink text-6xl pb-6">Farrel & Fitri</h3>
+            <!-- Text -->
+            <p class="text-sm text-customPink">
+              © 2022 Invie ID. All Rights Reserved.
+            </p>
+            <p class="text-sm text-customPink">
+              Made with &hearts; by
+              <span class="font-bold text-customPink">
+                Invie.id & freehtml5.co</span
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <img src="https://wedding.invie.my.id/assets/img/icons/wedding_ring.png" alt="invie_logo"> -->
+  </body>
+
+  <script>
+    const overlay = document.getElementById("overlay");
+    const bodyInvitation = document.getElementById("body-invitation");
+    const btn = document.getElementById("open-invitation");
+    btn.addEventListener("click", function () {
+      overlay.classList.add("animate-openInvitation");
+      bodyInvitation.classList.remove("hidden");
+      btn.remove();
+    });
+  </script>
+</html>

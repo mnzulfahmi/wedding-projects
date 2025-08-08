@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased font-poppins text-customGrey;
+  }
+  h3 {
+    @apply text-4xl font-semibold font-sacramento text-center lg:text-6xl;
+  }
+  h4 {
+    @apply text-xs uppercase font-poppins font-semibold tracking-widest text-center text-neutral-300 lg:text-sm;
+  }
+}
+
+@layer components {
+  .timeline-img {
+    @apply w-16 h-16 object-cover rounded-full shadow-md xs:absolute md:mx-auto md:left-0 md:right-0 lg:h-40 lg:w-40;
+  }
+  .timeline-container {
+    @apply relative pt-2 xs:pl-24 xs:pt-0 md:w-1/2 md:ml-auto md:pl-16 lg:pl-24;
+  }
+  .timeline-container-left {
+    @apply md:ml-0 md:mr-auto md:pl-0 md:pr-16 lg:pr-24;
+  }
+  .timeline-pointer {
+    @apply absolute inset-0 top-6 left-22 h-4 w-4 transform rotate-45 bg-white md:left-14 lg:top-17 lg:left-22;
+  }
+  .timeline-pointer-left {
+    @apply md:left-auto md:right-14 lg:right-22;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #f59d9d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#hero {
+  background-image: url("../images/prewed/prewed1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#event {
+  background-image: url("../images/prewed/prewed2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#content-4 {
+  background-image: url("../images/prewed/prewed2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#rsvp {
+  background-image: url("../images/prewed/prewed19.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.background-blend {
+  @apply w-full bg-neutral-300/20 flex justify-center items-center flex-col text-white;
+}
